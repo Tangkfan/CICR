@@ -1,4 +1,4 @@
-# Causal Intervention and Counterfactual Reasoning for Temporal Sentence Grounding
+# Boosting Temporal Sentence Grounding via Causal Inference
 ## Prerequisites
 This work was tested with Python 3.8.12, CUDA 11.3, and Ubuntu 18.04. 
 
@@ -80,6 +80,17 @@ python -m data.tokenized_count
 - `GloVe_tokenized_count.txt`
   
     Column 1 is the splited word in a sentence, column 2 is its tokenized id for GloVe, and column 3 is the times the word appears in the whole dataset.
+
+### Charades-STA
+- CLIP+SlowFast: We use the features provided by [MESM](https://mailustceducn-my.sharepoint.com/personal/liuzhihang_mail_ustc_edu_cn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fliuzhihang%5Fmail%5Fustc%5Fedu%5Fcn%2FDocuments%2FOpenSource%2FMESM%2Fdata&ga=1).
+- I3D: We employ features delivered by [VSLNet](https://app.box.com/s/h0sxa5klco6qve5ahnz50ly2nksmuedw).
+- VGG: We utilize features supplied by [2D-TAN](https://rochester.app.box.com/s/8znalh6y5e82oml2lr7to8s6ntab6mav/folder/137471415879).
+
+### QVHighlights
+We use the official feature files for QVHighlights dataset from [Moment-DETR](https://github.com/jayleicn/moment_detr?tab=readme-ov-file), and merge them to clip_image.hdf5 and slowfast.hdf5.
+
+### TACoS
+Features are obtained from [MESM](https://mailustceducn-my.sharepoint.com/personal/liuzhihang_mail_ustc_edu_cn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fliuzhihang%5Fmail%5Fustc%5Fedu%5Fcn%2FDocuments%2FOpenSource%2FMESM%2Fdata&ga=1).
 
 
 ## Training
