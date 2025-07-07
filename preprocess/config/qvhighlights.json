@@ -1,0 +1,18 @@
+{
+    "dataset": "qvhighlights",
+    "tokenizer_type": "CLIP",
+    "bpe_path": "./word_embeddings/bpe_simple_vocab_16e6.txt.gz",
+    "text_model_path": "./word_embeddings/clip_text_encoder.pth",
+    "ann_path": "./data/qvhighlights/annotations",
+    "output_subject_pkl": "./data/{}/{}_query_subject_{}.pkl",
+    "output_relation_pkl": "./data/{}/{}_query_relation_{}.pkl",
+    "output_object_pkl": "./data/{}/{}_query_object_{}.pkl",
+    "vocab_subject_json": "./data/{}/{}_vocab_subject.json",
+    "vocab_relation_json": "./data/{}/{}_vocab_relation.json",
+    "vocab_object_json": "./data/{}/{}_vocab_object.json",
+    "max_words_l": 32,
+    "vocab_size": 5000,
+    "max_sub_words_l": 4,
+    "max_rel_words_l": 4,
+    "max_obj_words_l": 4
+}

@@ -1,0 +1,19 @@
+{
+    "dataset": "charades",
+    "tokenizer_type": "GloVeNLTK",
+    "bpe_path": "./word_embeddings/bpe_simple_vocab_16e6.txt.gz",
+    "text_model_path": "./word_embeddings/glove.6B.300d.txt",
+    "ann_path": "./data/charades/annotations",
+    "output_subject_pkl": "./data/{}/{}_query_subject_glove_{}.pkl",
+    "output_relation_pkl": "./data/{}/{}_query_relation_glove_{}.pkl",
+    "output_object_pkl": "./data/{}/{}_query_object_glove_{}.pkl",
+    "vocab_subject_json": "./data/{}/{}_vocab_glove_subject.json",
+    "vocab_relation_json": "./data/{}/{}_vocab_glove_relation.json",
+    "vocab_object_json": "./data/{}/{}_vocab_glove_object.json",
+    "load_vocab_pkl": true,
+    "max_words_l": 16,
+    "vocab_size": 1111,
+    "max_sub_words_l": 250,
+    "max_rel_words_l": 560,
+    "max_obj_words_l": 680
+}

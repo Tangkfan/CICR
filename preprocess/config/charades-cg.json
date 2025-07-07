@@ -1,0 +1,19 @@
+{
+    "dataset": "Charades-CG",
+    "tokenizer_type": "CLIP",
+    "bpe_path": "./word_embeddings/bpe_simple_vocab_16e6.txt.gz",
+    "text_model_path": "./word_embeddings/clip_text_encoder.pth",
+    "ann_path": "./data/Charades-CG",
+    "load_vocab_pkl": false,
+    "output_subject_pkl": "./data/{}/{}_query_subject_clip_{}.pkl",
+    "output_relation_pkl": "./data/{}/{}_query_relation_clip_{}.pkl",
+    "output_object_pkl": "./data/{}/{}_query_object_clip_{}.pkl",
+    "vocab_subject_json": "./data/{}/{}_vocab_clip_subject.json",
+    "vocab_relation_json": "./data/{}/{}_vocab__clip_relation.json",
+    "vocab_object_json": "./data/{}/{}_vocab_clip_object.json",
+    "max_words_l": 16,
+    "vocab_size": 1111,
+    "max_sub_words_l": 4,
+    "max_rel_words_l": 4,
+    "max_obj_words_l": 4
+}
